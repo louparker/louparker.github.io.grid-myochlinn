@@ -7,15 +7,16 @@
 	margin: 0;
   }
 
+ 
+
 .container__content {
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
     width: 330px;
-    overflow: hidden;
 }
 
 img {
