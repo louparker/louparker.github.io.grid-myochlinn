@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+
+.container__content {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 430px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav {
+    transition: 0.3s all ease;
+    position: absolute;
+    width: 260px;
+    left: -260px;
+    height: 100%;
+    background: rgba(229,229,229,0.5);
+    z-index: 9999;
+  }
+
+  .open {
+    left: 0px;
+  }
+
+  .menu {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+  .menu__item {
+    font-size: 1.4rem;
+    font-family: "Philosopher", "Helvetica";
+    color: #070707;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+    text-align: left;
+  }
+  .menu__item:hover {
+    background: #bebebe;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #070707;
+  }
+
+  a:visited {
+      color: #070707;
+  }
+
+  /**** hamburger icon ****/
+.hamburger {
+    position: absolute;
+    top: 25px;
+    right: -70px;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    background: #222;
+    margin: 6px 0;
+    height: 6px;
+    width: 36px;
+    border-radius: 3px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .change.first-bar {
+    top: 11px;
+    transform: rotate(45deg);
+  }
+  .change.second-bar {
+    opacity: 0;
+  }
+  .change.third-bar {
+    bottom: 13px;
+    transform: rotate(-45deg);
+  }
+
+  .logo__image {
+      width: 85px;
+      float: right;
+      margin-right: 15px;
+      margin-top: 4px;
+  }
+
+  .pic1 {
+    width: auto;
+    height: auto;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .my {
+      font-size: 4.5rem;
+      margin-left: -15%;
+      margin-bottom: -8%;
+  }
+
+  .pic2 {
+    width: auto;
+    height: auto;
+    grid-column: 3/6;
+    grid-row: 2/4;
+  }
+
+ .pic3 {
+    width: auto;
+    height: auto;
+    grid-column: 3/5;
+    grid-row: 4/6;
+    display: flex;
+    justify-content: center;
+  }
+
+  .and {
+    font-size: 4rem;
+    margin-right: 20%;
+  }
+
+ .pic4 {
+
+    width: auto;
+    height: auto;
+    grid-column: 2/5;
+    grid-row: 5/7;
+  }
+
+ .pic5 {
+    
+    width: auto;
+    height: auto;
+    grid-column: 4/6;
+    grid-row: 5/7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .linn {
+    font-size: 4.5rem;
+    margin-left: 10%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__text {
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-family: "Philosopher", "Helvetica";
+}
+
+.social {
+  align-self: center;
+  font-size: 40px;
+  color: #070707;
+  align-items: stretch;
+}
+
+.insta {
+  margin: 15px;
+  color: #070707;
+}
+
+.facebook {
+  margin: 15px;
+  color: #070707;
+}
